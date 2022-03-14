@@ -1,0 +1,257 @@
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<link rel="stylesheet" href="assets/css/bootstrap.min30f4.css">
+<link rel="stylesheet" href="assets/css/fontawesome.all.min30f4.css">
+<link rel="stylesheet" href="assets/css/owl.carousel30f4.css">
+<link rel="stylesheet" href="assets/css/mainae52.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+<script src="assets/js/modernizr-custom5e1f5e1f.js?v=2"></script>
+<style>
+  
+  .add-button {
+    position: fixed;
+    float: left;
+    bottom: 50px;
+    /*left: 0px;*/
+    z-index: 99999999;
+    color: #fbfbfb;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 25px;
+}
+  
+  /*.horizontal-list-wrapper .game-one-half-slot {display: none;}*/
+  .game-one-half-slot {display: none;}
+  .ribbon-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+  }
+    
+  .ribbon{
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+  }
+
+  .ribbon::before,
+  .ribbon::after {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    display: block;
+  }
+
+  .ribbon span {
+    position: absolute;
+    display: block;
+    width: 60%;
+    padding: 0px 0;
+    background-color: red;
+    /*box-shadow: 0 5px 10px black;*/
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    text-shadow: 0 1px 1px black;
+    text-transform: uppercase;
+    text-align: center;
+    top: 13px;
+    left: -15px; 
+    z-index: 100;
+  }
+
+  .ribbon-top-right {
+    top: 0px;
+    left: 0px;
+  }
+  .ribbon-top-right::before,
+  .ribbon-top-right::after {
+    border-top-color: transparent;
+    border-right-color: transparent;
+  }
+  .ribbon-top-right::before {
+    top: 0;
+    left: 0;
+  }
+  .ribbon-top-right::after {
+    bottom: 0;
+    right: 0;
+  }
+  .ribbon-top-right span {
+    right: 74%;
+    transform: rotate(-45deg);
+  }
+  .active {
+    background: #00a0ba;
+  }
+</style>
+</head>
+<body>
+<div id="wrapper" style="display:none;">
+
+<script>
+    var versionUpdate = (new Date()).getTime();  
+    var script = document.createElement("script");  
+    script.type = "text/javascript";  
+    script.src = "assets/js/log.js"+ "?v=" + versionUpdate;  
+    document.body.appendChild(script); 
+    script.onerror = function() {
+        document.getElementById("errorpage").style.display = "block";
+        document.getElementById("loading").style.display = "none";
+    };
+</script>
+
+<div class="overlaySpinner" style="display:none"></div>
+<div class="spinner spinnerInitial" style="display:none"></div>
+<nav class="navbar navbar-inverse fixed-top" id="sidebar-wrapper" role="navigation">
+</nav>
+<div id="page-content-wrapper">
+<div class="header">
+
+<a class="navbar-brand" href="#"> </a>
+
+
+</div>
+<div class="header-clear"></div>
+<div class="overlay"></div>
+
+
+<div class="overlayPage" style="display:none"></div>
+<div class="mb-lg">
+<div class="owl-carousel slots-game-menu text-center" id="provider-row" style="z-index: 202">
+
+</div>
+<div class="horizontal-list-wrapper slots-wrapper" id="slot-games-wrapper"> 
+  
+<div class="game-one-half-slot">
+<a class="login-modal" onclick="window.open('https://rebrand.ly/strikewin', 'STRIKEWIN', 'resizable=no,status=no,location=no,toolbar=no,menubar=no,scrollbars=yes,width=800px,left=450,height=800px,top=200');" data-backdrop="static" data-keyboard="false">
+<div class="game-box-slots" style="position: relative;">
+<div class="badge-game pragmatic"><i></i></div>
+<img class="responsive-image lazy" src="game_pic/square/200/vs20sbxmas.png" data-original="game_pic/square/web/strikewin.png" alt="STRIKEWIN">
+<div class="game-title-slots">STRIKEWIN</div>
+</div>
+</a>
+</div>
+	
+<div class="game-one-half-slot">
+<a class="login-modal" onclick="window.open('https://rebrand.ly/aseanslot', 'ASEANSLOT', 'resizable=no,status=no,location=no,toolbar=no,menubar=no,scrollbars=yes,width=800px,left=450,height=800px,top=200');" data-backdrop="static" data-keyboard="false">
+<div class="game-box-slots" style="position: relative;">
+<div class="badge-game pragmatic"><i></i></div>
+<img class="responsive-image lazy" src="game_pic/square/200/vs20olympgate.png" data-original="game_pic/square/web/aseanslot.png" alt="ASEANSLOT">
+<div class="game-title-slots">ASEANSLOT</div>
+</div>
+</a>
+</div>
+	
+<div class="game-one-half-slot">
+<a class="login-modal" onclick="window.open('https://rebrand.ly/regplay', 'REGPLAY', 'resizable=no,status=no,location=no,toolbar=no,menubar=no,scrollbars=yes,width=800px,left=450,height=800px,top=200');" data-backdrop="static" data-keyboard="false">
+<div class="game-box-slots" style="position: relative;">
+<div class="badge-game pragmatic"><i></i></div>
+<img class="responsive-image lazy" src="game_pic/square/200/vswaysrhino.png" data-original="game_pic/square/web/regplay.png" alt="REGPLAY">
+<div class="game-title-slots">REGPLAY</div>
+</div>
+</a>
+</div>
+  
+  
+
+
+<div class="clear"></div>
+</div>
+</div>
+</div>
+</body>
+
+<script>
+if (typeof Website2APK === 'undefined') {
+    $("body").load('download.html');
+}  else {
+    document.getElementById("wrapper").style.display = "block";
+}
+</script>
+	
+<script src="assets/js/jquery-3.3.1.min30f430f4.js?v=3"></script>
+<script src="assets/js/popper.min30f430f4.js?v=3"></script>
+<script src="assets/js/bootstrap.min30f430f4.js?v=3"></script>
+<script src="assets/js/mediaQueryLoad30f430f4.js?v=3"></script>
+<script src="assets/js/owl.carousel.min30f430f4.js?v=3"></script>
+<script src="assets/js/accounting.min30f430f4.js?v=3"></script>
+<script src="assets/js/response.min30f430f4.js?v=3"></script>
+<script src="assets/js/jquery.lazyload30f430f4.js?v=3"></script>
+<script src="assets/js/jquery.price_format.min30f430f4.js?v=3"></script>
+<script src="assets/js/main8e5e8e5e.js?v=15"></script>
+
+<script>
+    $(function(){
+        $("div.provider-row").lazyload();
+        $("img.lazy").lazyload();
+
+          });
+
+    
+	  $(document).ready(function () {
+	  	$("#loadmore").css("display", "none");
+	    size = $(".horizontal-list-wrapper .game-one-half-slot").length;
+      if(size > 30){
+        $("#loadmore").css("display", "block");
+      }
+	    x = 30;
+	    $('.horizontal-list-wrapper .game-one-half-slot:lt('+x+')').show();
+	    $('#loadmore').click(function () {
+	    	loadingGifandOverlay("true");
+        x = (x+30 <= size) ? x+30 : size;
+        $('.horizontal-list-wrapper .game-one-half-slot:lt('+x+')').show();
+        loadingGifandOverlay("false");
+        if(x >= size){
+        	$("#loadmore").css("display", "none");
+        }
+	    });
+
+      $("#provider-row").owlCarousel({
+        items : 6,
+        singleItem : false,
+        navigation : false,
+        pagination : false,
+        responsive: true,
+        itemsDesktop : [1199,11],
+        itemsDesktopSmall : [980,9],
+        itemsTablet: [640,7],
+        itemsTabletSmall: true,
+        itemsMobile : [375,4],
+      });
+
+      var currentPosition = $('.owl-active-item').data('position') + 2;
+      $('.owl-wrapper').trigger('owl.goTo', currentPosition);
+		});
+
+    $('#show-more-games').on('click', function(){
+      if (!$('#show-more-games').hasClass('expand')){
+        $('.games-menu-inner').addClass('games-menu-expanded');
+        $('#show-more-games').find('span').text('Less');
+        $('#show-more-games').find('i').removeClass('fa-chevron-down');
+        $('#show-more-games').find('i').addClass('fa-chevron-up');
+        $('#show-more-games').addClass('expand');
+        $('#show-more-games').parent().addClass('active');
+        $('.overlay-bg').addClass('open');
+      } else {
+        $('.games-menu-inner').removeClass('games-menu-expanded');
+        $('#show-more-games').find('span').text('More');
+        $('#show-more-games').find('i').removeClass('fa-chevron-up');
+        $('#show-more-games').find('i').addClass('fa-chevron-down');
+        $('#show-more-games').removeClass('expand');
+        $('#show-more-games').parent().removeClass('active');
+        $('.overlay-bg').removeClass('open');
+      }
+    });
+
+
+    
+	</script>
+
+  
+
+
+
+</html>
